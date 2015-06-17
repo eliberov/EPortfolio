@@ -1,0 +1,119 @@
+a:focus {  outline: thin dotted;  }
+a:active, a:hover { outline: 0; }
+a {  text-decoration: none;  }
+
+
+//fieldset {
+//  border: 1px solid silver;
+//  margin: 0 2px;
+//  padding: .35em .625em .75em;
+//}
+
+
+  /* Normalize End */
+
+body {
+  background: #c4c4c4;
+}
+
+
+.contain {
+  display: block;
+  margin: 100px auto;
+  width: 400px;
+  height: 330px;
+  background: #f5f5f5;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px 2px rgba(0, 0, 0, .3);
+}
+/* Info */
+
+.info {
+  position: absolute;
+  z-index: 200;
+  color: #ffffff;
+  font-weight: 700;
+  top: 320px;
+  display: block;
+  text-align: center;
+  margin-left: 180px;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+
+
+/* Menu */
+
+.menu {
+  width: 100px;
+  height: 330px;
+  position: absolute;
+  z-index: 100;
+  background: #222222;
+  border-radius: 5px 0px 0 5px;
+  font-size: 38px;
+  text-align: center;
+}
+
+.menu ul {
+  list-style-type: none;
+  position: relative;
+  display: block;
+  top:0px;
+}
+
+.menu ul li {
+  display: block;
+  width: 100px;
+  position: relative;
+  right: 40px;
+  line-height: 65px;
+  color: #d0ced1;
+  -webkit-transition: all .3s ease;
+  border-bottom: rgba(70, 70, 70, .2) 1px solid;
+}
+
+
+
+.menu ul li:hover {
+  background: #191919;
+  border-radius: 5px 0 0 5px;
+  -webkit-transition: all .2s ease;
+}
+
+.menu a {
+  border: 0;
+  color: #d0ced1;
+}
+/* Profile Photo */
+
+.profile {
+  float: right;
+  width: 300px;
+  height: 330px;
+  background:#222222;
+  border-radius: 0 5px 5px 0;
+}
+
+.profile img {
+  z-index: 1;
+  width: auto;
+  height: 100%;
+  position: relative;
+  right: 30px;
+  border-radius: 0 5px 5px 0;
+}
+
+
+.thumbnail {
+  height: 200px;
+
+  img.pull-right {
+    width: 50px;
+  }
+}
+
+/* Do not remove this comments bellow. It's the markers used by gulp-inject to inject
+   all your sass files automatically */
+// injector
+// endinjector
