@@ -5,6 +5,7 @@
     <div class="info">
       <h3 ng-hide="bigplus == false">Ely Liberov</h3>
       <h5 ng-hide="bigplus == false"><span class="glyphicon glyphicon-map-marker"></span>New York, NY</h5>
+      <span ng-show="timenow == true">{{date | date:'MM/dd/yyyy @ h:mma'}}</span><br>
     </div>
     <div class="menu">
       <ul>
@@ -13,13 +14,13 @@
         <a href="mailto:Eliberov@gmail.com.com" target="_blank"><li class="glyphicon glyphicon-envelope"></li></a>
         <a href="https://instagram.com/elythescienceguy/" target="_blank"><li class="glyphicon glyphicon-camera"></li></a>
         <a ui-sref="projects"><li class="glyphicon glyphicon-folder-open"></li></a>
-        <a ui-sref="projects"><li class="glyphicon glyphicon-time"></li></a>
+        <a ng-click="timenow = true"><li class="glyphicon glyphicon-time"></li></a>
       </ul>
     </div>
     <div class="profile">
       <img ng-hide="bigplus == false" src="../assets/images/261.png" >
-      <h4 style="width:300px;color:white;padding:10px;margin-top:50px;" ng-hide="bigplus == true" class="text-center">Creativity, an eye for design, with
-        <br>an academic foundation in IT and Marketing
+      <h4 style="width:300px;color:white;padding:10px;margin-top:50px;" ng-hide="bigplus == true" class="text-center">Creativity, an eye for design,
+        <br>with an academic foundation in IT and Marketing
         <br>help me transform any problem into a simple and elegant solution.
         <br>
         <a ng-click="bigplus = true"> Ely Liberov</a>

@@ -17,6 +17,10 @@ angular.module('eFolio', ['ngTouch', 'ngResource', 'ui.router', 'ui.bootstrap'])
         url: '/projects',
         templateUrl: 'app/projects/projects.html',
         controller: 'ProjectsCtrl'
+      }).state('media', {
+        url: '/media',
+        templateUrl: 'app/media/media.html',
+        controller: 'ProjectsCtrl'
       });
 
     $urlRouterProvider.otherwise('/');
